@@ -11,7 +11,14 @@ const Header = () => {
                     <li><a href="#portraits">Portraits</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button type="button">Login</button>
             </nav>
+            <div className="toggleBar">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
         </header>
     );
 }

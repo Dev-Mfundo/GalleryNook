@@ -1,8 +1,8 @@
 const Portrait = () => {
     return (
-        <div className="gallery-section">
+        <div className="portraits-section" id="portraits">
             <h2>Where Art Meets Soul</h2>
-            <div className="gallery-grid">
+            <div className="portraits-grid">
             <div className="items">
                 <img src="#" alt=""/>
                 <nav>

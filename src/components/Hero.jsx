@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <section className="hero">
+        <section className="hero" id="home">
             <h2 className="hero-heading">GalleryNook</h2>
             <h3 className="second-heading">Where creativity breathes life into canvas.</h3>
             <div className="hero-images">
@@ -12,7 +12,7 @@ const Hero = () => {
                 <div className="hero-image-container">
                     <div className="heroImg02"></div>
                 </div>
-                <button>Check Out Gallery</button>
+                <a href="#gallery"><button>Check Out Gallery</button></a>
             </div>
         </section>
     );

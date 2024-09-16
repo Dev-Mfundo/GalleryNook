@@ -1,4 +1,5 @@
 import './App.css'
+import Contact from './components/Contact';
 import Gallery from './components/Gallery';
 import Hero from './components/Hero';
 import Portrait from './components/Portrait';
@@ -13,6 +14,7 @@ const App =()=>{
         <Hero/>
         <Gallery/>
         <Portrait/>
+        <Contact/>
       </main>
         <Footer/>
     </div>

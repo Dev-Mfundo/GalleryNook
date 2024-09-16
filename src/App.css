@@ -29,10 +29,16 @@ header,footer{
   top: 23px;
   color: #f0c040;
 }
-
+.nav{
+  display: flex;
+}
+.nav button{
+  margin-right: 30px;
+}
 .nav ul {
   list-style: none;
-  margin-right: 40px;
+  margin-top: 10px;
+  margin-right: 10px;
   padding: 0;
   display: flex;
 }
@@ -57,14 +63,20 @@ header,footer{
       flex-direction: column;
       text-align: center;
   }
+  .nav{
+    flex-direction: column;
+    margin-right: 20px;
+    text-align: center;
+  }
 
   .nav ul {
-      display: none;
       flex-direction: column;
+      margin-right: 30px;
   }
 
   .nav ul li {
       margin: 10px 0;
+
   }
 }
 
@@ -147,14 +159,19 @@ main{
   min-height: 100vh;
   display: block;
   place-content: center;
-  background-color: #E9EFEC;
+  background-color: #000000;
+  background-image: url("public/pexels-steve-1476505.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .gallery-section h2{
-  font-size: clamp(2rem, 6vw,9rem);
+  font-size: 6.5rem;
   font-weight: 600;
   text-align: center;
   padding: 10px;
   margin-bottom: 30px;
+  color: #16423C;
 }
 .gallery-grid{
   display: grid;
@@ -229,5 +246,79 @@ main{
   .footer-content {
       flex-direction: column;
       text-align: center;
+  }
+}
+
+#contact{
+  min-height: 100vh;
+  padding-top: 140px;
+}
+.contact-container {
+  max-width: 300px;
+  margin: 0px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-input, 
+.form-textarea {
+  width: 92.9%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.form-input:focus, 
+.form-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submit-button {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .contact-container {
+    padding: 15px;
+  }
+
+  .submit-button {
+    width: 100%;
   }
 }
