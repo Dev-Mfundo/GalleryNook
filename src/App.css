@@ -1,0 +1,44 @@
+#root {
+  max-width: 1980px;
+}
+.container{
+  background-color: #6A9C89;
+}
+header,footer{
+  background-color: #16423C;
+}
+main{
+  background-color: #C4DAD2;
+}
+.gallery-section{
+  min-height: 100vh;
+  display: block;
+  place-content: center;
+  background-color: #E9EFEC;
+}
+.gallery-section h2{
+  font-size: clamp(2rem, 6vw,9rem);
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.gallery-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border: 1px solid #000000;
+}
+.gallery-grid .items{
+  border: 1px solid grey;
+}
+.gallery-grid .items nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.gallery-grid .items nav h4{
+  font-size: 1.1rem;
+}
+.gallery-grid .items nav p{
+  font-size: 1.05rem;
+}

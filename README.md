@@ -1,2 +1,2 @@
-# GalleryNook
-GalleryNook Art Gallery E-Commerce
+GalleryNook
+Art Gallery E-Commerce
