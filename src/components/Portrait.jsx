@@ -3,41 +3,48 @@ const Portrait = () => {
         <div className="portraits-section" id="portraits">
             <h2>Where Art Meets Soul</h2>
             <div className="portraits-grid">
-                <div className="items">
-                    <img src="#" alt="Portrait 1"/>
-                    <nav>
-                        <h4>Title</h4>
-                        <p>Price</p>
-                    </nav>
-                </div>
-                <div className="items">
-                    <img src="#" alt="Portrait 2"/>
-                    <nav>
-                        <h4>Title</h4>
-                        <p>Price</p>
-                    </nav>
-                </div>
-                <div className="items">
-                    <img src="#" alt="Portrait 3"/>
-                    <nav>
-                        <h4>Title</h4>
-                        <p>Price</p>
-                    </nav>
-                </div>
-                <div className="items">
-                    <img src="#" alt="Portrait 4"/>
-                    <nav>
-                        <h4>Title</h4>
-                        <p>Price</p>
-                    </nav>
-                </div>
-                <div className="items">
-                    <img src="#" alt="Portrait 5"/>
-                    <nav>
-                        <h4>Title</h4>
-                        <p>Price</p>
-                    </nav>
-                </div>
+            <div className="items">
+                <img src="/pexels-steve-1774986.jpg" alt=""/>
+                <nav>
+                    <h4>Title</h4>
+                    <p>Price</p>
+                </nav>
+            </div>
+            <div className="items">
+                <img src="/ai-generated-8866054w_1280.jpg" alt=""/>
+                <nav>
+                    <h4>Title</h4>
+                    <p>Price</p>
+                </nav>
+            </div>
+            <div className="items">
+                <img src="/pinacoteca-di-brera-3643244_640.jpg" alt=""/>
+                <nav>
+                    <h4>Title</h4>
+                    <p>Price</p>
+                </nav>
+            </div>
+            <div className="items">
+                <img src="/pexels-steve-1266808.jpg" alt=""/>
+                <nav>
+                    <h4>Title</h4>
+                    <p>Price</p>
+                </nav>
+            </div>
+            <div className="items">
+                <img src="/art-7484806_640.jpg" alt=""/>
+                <nav>
+                    <h4>Title</h4>
+                    <p>Price</p>
+                </nav>
+            </div>
+            <div className="items">
+                <img src="/berlin-wall-745073_640.jpg" alt=""/>
+                <nav>
+                    <h4>Title</h4>
+                    <p>Price</p>
+                </nav>
+            </div>
             </div>
 
             <section className="portrait-request">

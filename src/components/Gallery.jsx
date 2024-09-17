@@ -39,13 +39,6 @@ const Gallery=()=>{
                 </nav>
             </div>
             <div className="items">
-                <img src="/pexels-abdghat-1631677.jpg" alt=""/>
-                <nav>
-                    <h4>Title</h4>
-                    <p>Price</p>
-                </nav>
-            </div>
-            <div className="items">
                 <img src="/berlin-wall-745073_640.jpg" alt=""/>
                 <nav>
                     <h4>Title</h4>

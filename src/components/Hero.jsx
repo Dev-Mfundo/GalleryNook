@@ -12,7 +12,7 @@ const Hero = () => {
                 <div className="hero-image-container">
                     <div className="heroImg02"></div>
                 </div>
-                <a href="#gallery"><button>Check Out Gallery</button></a>
+                <a href="#gallery" id="checkOut"><button>Check Out Gallery</button></a>
             </div>
         </section>
     );

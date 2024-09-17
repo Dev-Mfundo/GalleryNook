@@ -172,7 +172,9 @@ main{
   color: #33333356;
   font-size: 7rem;
 }
-
+#checkOut{
+  margin-top: 35px;
+}
 @media only screen and (max-width: 768px) {
   .hero-images {
       flex-direction: column;
@@ -192,9 +194,11 @@ main{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 50px 10px;
 }
 .gallery-section h2{
-  font-size: 6.5rem;
+  margin-top: 50px;
+  font-size: 3rem;
   font-weight: 600;
   text-align: center;
   padding: 10px;
@@ -204,6 +208,7 @@ main{
 .gallery-grid{
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  gap: 20px;
   border: 1px solid grey;
 }
 
@@ -222,10 +227,16 @@ main{
 
 .portraits-section {
   min-height: 100vh;
-  padding: 50px;
+  background-color: #000000;
+  background-image: url("/pexels-steve-1476505.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 10px;
 }
 
 .portraits-section h2 {
+  margin-top: 50px;
   text-align: center;
   font-size: 3rem;
   color: #16423C;
@@ -237,6 +248,7 @@ main{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  border: 1px solid grey;
 }
 
 .items {
@@ -245,16 +257,15 @@ main{
   border-radius: 10px;
   text-align: center;
   height: fit-content;
-  transition: 0.2s;
+  transition: transform 0.3s ease;
 }
 .items img:hover{
-  position: absolute;
-  right: 40%;
-  width: 40%;
+  transform: scale(1.05);
+  z-index: inherit;
 }
 .items img {
-  width: 100%;
-  height: auto;
+  width: 95%;
+  height: 300px;
   border-radius: 8px;
 }
 
@@ -271,17 +282,17 @@ main{
 
 
 @media only screen and (max-width: 1024px) {
-  .portraits-grid {
+  .gallery-grid , .portraits-grid {
       grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .portraits-grid {
+  .gallery-grid , .portraits-grid {
       grid-template-columns: 1fr;
   }
 
-  .portraits-section h2 {
+  .gallery-grid h2, .portraits-section h2 {
       font-size: 2rem;
   }
 }
@@ -311,7 +322,6 @@ main{
 .form-group input, 
 .form-group textarea, 
 .form-group select {
-  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
