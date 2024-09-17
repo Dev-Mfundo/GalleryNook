@@ -193,7 +193,7 @@ main{
   display: block;
   place-content: center;
   background-color: #000000;
-  background-image: url("/pexels-steve-1476505.jpg");
+  background-image: url("/portrait.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -231,7 +231,7 @@ main{
 .portraits-section {
   min-height: 100vh;
   background-color: #000000;
-  background-image: url("/pexels-steve-1476505.jpg");
+  background-image: url("/owl.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -409,6 +409,11 @@ main{
 
 #contact{
   min-height: 100vh;
+  background-color: #000000;
+  background-image: url("/exhibition.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 140px;
 }
 .contact-container {
