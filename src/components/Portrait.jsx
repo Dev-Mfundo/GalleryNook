@@ -50,16 +50,18 @@ const Portrait = () => {
             <section className="portrait-request">
                 <form>
                     <fieldset>
-                        <legend>Request Your Personalized Portrait</legend>
+                        <legend>
+                            <h3>Request Your Personalized Portrait</h3>
+                        </legend>
 
                         <div className="form-group">
                             <label htmlFor="name">Full Name</label>
-                            <input type="text" placeholder="Enter your full name" name="name" id="name" autoComplete="on" required />
+                            <input type="text" placeholder="full name" name="name" id="name" autoComplete="on" required />
                         </div>
 
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
-                            <input type="email" placeholder="Enter your email address" name="email" id="email" autoComplete="on" required />
+                            <input type="email" placeholder="email" name="email" id="email" autoComplete="on" required />
                         </div>
 
                         <div className="form-group">

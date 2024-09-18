@@ -6,6 +6,7 @@
 }
 header,footer{
   background-color: #16423C;
+  font-family: "Gupter", serif;
 }
 .header {
   display: flex;
@@ -28,12 +29,14 @@ header,footer{
   left: 20px;
   top: 23px;
   color: #f0c040;
+  font-family: "Gupter", serif;
 }
 .nav{
   display: flex;
 }
 .nav button{
   margin-right: 30px;
+  font-family: "Gupter", serif;
 }
 .nav ul {
   list-style: none;
@@ -52,6 +55,7 @@ header,footer{
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s ease;
+  font-family: "Gupter", serif;
 }
 
 .nav ul li a:hover {
@@ -130,6 +134,8 @@ main{
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+  font-family: "Gupter", serif;
+  position: relative;
 }
 
 .hero-heading {
@@ -194,6 +200,7 @@ main{
   place-content: center;
   background-color: #000000;
   background-image: url("/portrait.jpg");
+  font-family: "Gupter", serif;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,7 +213,7 @@ main{
   text-align: center;
   padding: 10px;
   margin-bottom: 30px;
-  color: #16423C;
+  color: #f0c040;
 }
 .gallery-grid{
   display: grid;
@@ -232,6 +239,7 @@ main{
   background-color: #000000;
   background-image: url("/owl.jpg");
   background-position: center;
+  font-family: "Gupter", serif;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 70px 10px;
@@ -241,7 +249,7 @@ main{
   margin-top: 50px;
   text-align: center;
   font-size: 3rem;
-  color: #16423C;
+  color: #f0c040;
   margin-bottom: 30px;
 }
 
@@ -273,13 +281,16 @@ main{
 
 .items nav h4 {
   font-size: 1.5rem;
-  color: #333;
-  margin-top: 10px;
+  color: #6A9C89;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #000000;
 }
 
 .items nav p {
   font-size: 1.2rem;
-  color: #666;
+  color: #f3f3f3;
+  font-weight: bold;
 }
 
 
@@ -306,16 +317,19 @@ main{
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
+  max-width: 400px;
   margin: 50px auto;
 }
 .portrait-request fieldset{
-  padding: 20px
+  border: 0px;
+  padding: 20px;
 }
 
 .portrait-request fieldset legend{
   text-align: center;
-  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  color: #16423C;
 }
 .portrait-request .form-group{
   display: flex;
@@ -324,15 +338,9 @@ main{
 .portrait-request form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
-.form-group label {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #333;
-}
+
 
 .form-group input, 
 .form-group textarea, 
@@ -349,7 +357,6 @@ main{
 .submit-button {
   background-color: #16423C;
   color: #f0c040;
-  padding: 10px;
   border: none;
   border-radius: 4px;
   font-size: 1.2rem;
@@ -426,16 +433,17 @@ main{
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Gupter", serif;
   padding-top: 140px;
 }
 .contact-container {
-  max-width: 300px;
+  max-width: 400px;
   margin: 0px auto;
   padding: 30px;
   background-color: #f9f9f9;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  font-family: 'Arial', sans-serif;
+  font-family: "Gupter", serif;
   z-index: 1;
 }
 
@@ -456,13 +464,10 @@ main{
 }
 
 .form-group label {
-  font-size: 14px;
-  font-weight: bold;
   margin-bottom: 5px;
   color: #333;
 }
 
-.form-input, 
 .form-textarea {
   width: 92.9%;
   padding: 10px;
@@ -496,4 +501,151 @@ main{
   .submit-button {
     width: 100%;
   }
+}
+
+
+.auth-page{
+  margin-top:5%;
+  font-family: "Gupter", serif;
+  
+}
+.auth-page p{
+  color: #d6d6d6;
+}
+.form-popup {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.74);
+  z-index: 1000;
+}
+#response{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #cf2c2c;
+}
+.close-btn {
+  position: relative;
+  right: 154px;
+  bottom: 45px;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.close-btn:hover{
+  outline: 1px solid #f0c040;
+}
+.close-btn:focus{
+  outline: 1px solid #f0c040;
+}
+.loader {
+  display: none;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #f0c040; /*REMINDER TO SELF TO ENABLE THIS WITH JAVASCRIPT*/
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.form-container {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+h2 {
+  font-family: "Gupter", serif;
+  color: #f0c040;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+#form-phrase{
+  color: #d6d6d6;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  background: none;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group a {
+  text-decoration: none;
+  position: relative;
+  top: 5px;
+  color: rgb(89, 168, 65);
+  background: none;
+}
+
+.input-group a:hover {
+  text-decoration: underline;
+  color: rgb(153, 119, 32);
+  background: none;
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #c5c5c5;
+  display: block;
+}
+
+
+input:focus {
+  outline: none;
+  border-color: #f0c040;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-btn:hover {
+  background-color: #f0c040;
+  color: #16423C;
+}
+
+.switch-auth {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.switch-auth a {
+  color: #f0c040;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+}
+
+.switch-auth a:hover {
+  text-decoration: underline;
+  background: none;
+  color: #f3f3f3;
 }

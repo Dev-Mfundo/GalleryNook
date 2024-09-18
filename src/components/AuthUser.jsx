@@ -21,7 +21,8 @@ function AuthUser() {
         {currentForm === "signIn" && (
           <>
             <h2>Welcome Back</h2>
-            <p id="response">Sign in to continue your journey to finding the perfect home.</p>
+            <p id="form-phrase">Access your personalized gallery by signing in to GalleryNook today.</p>
+            <p id="response"></p>
             <div id="loader" className="loader"></div>
             <form id="signInForm">
               <div className="input-group">
@@ -42,7 +43,8 @@ function AuthUser() {
         {currentForm === "signUp" && (
           <>
             <h2>Create Your Account</h2>
-            <p id="response">Join us and start your journey to homeownership.</p>
+            <p id="form-phrase">Join GalleryNook and start showcasing your creativity with stunning galleries.</p>
+            <p id="response"></p>
             <div id="loader" className="loader"></div>
             <form id="signUpForm">
               <div className="input-group">
@@ -70,7 +72,8 @@ function AuthUser() {
         {currentForm === "forgotPassword" && (
           <>
             <h2>Forgot Your Password?</h2>
-            <p id="response">Please input the email you signed up with so we can send you a link to reset your password.</p>
+            <p id="form-phrase">Please input the email you signed up with so we can send you a link to reset your password.</p>
+            <p id="response"></p>
             <div id="loader" className="loader"></div>
             <form id="forgotPasswordForm">
               <div className="input-group">
