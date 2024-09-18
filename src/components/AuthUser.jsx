@@ -26,8 +26,8 @@ function AuthUser() {
             <div id="loader" className="loader"></div>
             <form id="signInForm">
               <div className="input-group">
-                <label htmlFor="email">Email Address</label>
-                <input type="email" id="email" name="email" autoComplete="on" required />
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" placeholder="email" name="email" autoComplete="on" required />
               </div>
               <div className="input-group">
                 <label htmlFor="password">Password</label>
@@ -52,16 +52,16 @@ function AuthUser() {
                 <input type="text" id="full-name" name="name" autoComplete="on" required />
               </div>
               <div className="input-group">
-                <label htmlFor="email">Email Address</label>
-                <input type="email" id="email" name="email" autoComplete="on" required />
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" placeholder="email" name="email" autoComplete="on" required />
               </div>
               <div className="input-group">
                 <label htmlFor="password">Password</label>
-                <input type="password" id="password" name="password" autoComplete="on" required />
+                <input type="password" id="password" placeholder="Create password" name="password" autoComplete="on" required />
               </div>
               <div className="input-group">
                 <label htmlFor="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" autoComplete="on" required />
+                <input type="password" id="confirm-password" placeholder="Confirm password" name="confirm-password" autoComplete="on" required />
               </div>
               <button type="submit" className="auth-btn">Sign up</button>
             </form>
@@ -78,7 +78,7 @@ function AuthUser() {
             <form id="forgotPasswordForm">
               <div className="input-group">
                 <label htmlFor="email">Your Email</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" placeholder="email" name="email" required />
               </div>
               <button type="submit" className="auth-btn">Submit</button>
             </form>
