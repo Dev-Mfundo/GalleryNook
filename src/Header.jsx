@@ -29,7 +29,7 @@ const Header = () => {
           style={{ display: toggleNav ? "flex" : "none" }}
         >
           <ul>
-            <li><a href="#home" onClick={handleMenuItemClick}>Home</a></li>
+            <li><a href="./" onClick={handleMenuItemClick}>Home</a></li>
             <li><a href="#gallery" onClick={handleMenuItemClick}>Gallery</a></li>
             <li><a href="#portraits" onClick={handleMenuItemClick}>Portraits</a></li>
             <li><a href="#contact" onClick={handleMenuItemClick}>Contact</a></li>
