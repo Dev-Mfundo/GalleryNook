@@ -186,7 +186,6 @@ main{
   display: block;
   place-content: center;
   background-color: #000000;
-  background-image: url("/portrait.jpg");
   font-family: "Gupter", serif;
   background-position: center;
   background-repeat: no-repeat;
@@ -224,7 +223,6 @@ main{
 .portraits-section {
   min-height: 100vh;
   background-color: #000000;
-  background-image: url("/owl.jpg");
   background-position: center;
   font-family: "Gupter", serif;
   background-repeat: no-repeat;
